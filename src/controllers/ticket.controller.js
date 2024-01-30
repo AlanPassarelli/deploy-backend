@@ -1,6 +1,6 @@
-import { cartModel } from "../dao/models/carts.model.js";
-import { ticketModel } from "../dao/models/ticket.model.js";
 import { productsModel } from "../dao/models/products.model.js";
+import { ticketModel } from "../dao/models/ticket.model.js";
+import { cartModel } from "../dao/models/carts.model.js";
 
 export const postCompra = async (req, res) => {
   const cartId = req.params.cid;
@@ -35,8 +35,8 @@ export const postCompra = async (req, res) => {
 
     // se crea un ticket con los datos de la compra
     const ticket = new ticketModel({
-      amount: cart.total, // Supongo que el carrito tiene un campo total
-      purchaser: cart.userEmail, // O donde se almacena el correo del usuario
+      amount: cart.total, 
+      purchaser: cart.userEmail, 
     });
     await ticket.save();
 

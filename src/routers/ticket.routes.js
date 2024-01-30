@@ -1,15 +1,8 @@
 import { Router } from "express";
-import { createTicket,getAllTickets,getTicketByCode } from "../controllers/ticket.controller.js";
+import { postCompra } from "../controllers/ticket.controllers";
 
-const routerT = Router();
+const ticketRouter = Router();
 
-// Ruta para crear un nuevo ticket
-routerT.post('/tickets', createTicket);
+ticketRouter.post("/:cid/purchase", postCompra);
 
-// Ruta para obtener todos los tickets
-routerT.get('/tickets', getAllTickets);
-
-// Ruta para obtener un ticket por su código único
-routerT.get('/tickets/:code', getTicketByCode);
-
-export default routerT;
+export default ticketRouter;
