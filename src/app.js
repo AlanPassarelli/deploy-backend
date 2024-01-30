@@ -44,7 +44,7 @@ const swaggerOptions = {
 const specs = swaggerJSDOc (swaggerOptions)
 app.use('/apidocs', swaggerUiExpress.serve,swaggerUiExpress.setup (specs))
 //BDD
-mongoose.connect(process.env.MONGO_URL)
+mongoose.connect(`mongodb+srv://alangpassarelli:alanpassarelli@cluster0.4oxvxpc.mongodb.net/?retryWrites=true&w=majority`)
     .then(async () => {
         console.log('BDD conectada')
     })
