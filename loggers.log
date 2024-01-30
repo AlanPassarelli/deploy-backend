@@ -1,0 +1,25 @@
+[32minfo[39m: GET es / -20:01:14
+[32minfo[39m: Hola
+[32minfo[39m: GET es / -20:01:36
+[32minfo[39m: GET es / -20:02:58
+[31merror[39m: Hola
+[31merror[39m: Hola
+[34minfo[39m: GET es /info -20:17:40
+[34minfo[39m: Info
+[34minfo[39m: GET es /warning -20:17:49
+[36mwarning[39m: warning
+[36mwarning[39m: warning
+[34minfo[39m: GET es /error -20:17:59
+[33merror[39m: error
+[33merror[39m: error
+[34minfo[39m: GET es /fatal -20:18:04
+[31mfatal[39m: fatal
+[31mfatal[39m: fatal
+[33merror[39m: error
+[33merror[39m: error
+[36mwarning[39m: warning
+[36mwarning[39m: warning
+[36mwarning[39m: warning
+[36mwarning[39m: warning
+[31mfatal[39m: fatal
+[31mfatal[39m: fatal

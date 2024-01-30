@@ -1,0 +1,17 @@
+createProduct:
+  missingFields: Faltan campos obligatorios para crear el producto.
+  duplicateProduct: Ya existe un producto con el mismo nombre o identificador único.
+  databaseError: Error al intentar crear el producto en la base de datos.
+  validationError: Los datos del producto no son válidos. Por favor, revisa la información ingresada.
+
+addToCart:
+  unauthenticated: Debes iniciar sesión para agregar productos al carrito.
+  expiredSession: La sesión ha expirado. Por favor, vuelve a iniciar sesión.
+  productNotFound: El producto que estás intentando agregar no existe.
+  quantityLimitExceeded: Has excedido el límite de cantidad permitido para este producto.
+  concurrencyIssue: Se ha producido un problema debido a la concurrencia. Por favor, intenta de nuevo.
+  pricingError: Error al calcular el precio total del carrito. Por favor, revisa los precios y descuentos.
+  productUnavailable: El producto ya no está disponible. Actualiza tu carrito.
+  totalCalculationError: Error al calcular el total del carrito. Por favor, revisa tu selección de productos.
+  cartLoadError: Error al cargar el carrito. Por favor, intenta de nuevo.
+  paymentError: Error al procesar el pago. Por favor, verifica la información de pago y vuelve a intentarlo.

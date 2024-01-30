@@ -1,0 +1,53 @@
+paths:
+  /api/carts:
+    post:
+      summary: Agregar producto a un carrito
+      tags:
+        - Carts
+      parameters:
+        - name: cid
+          in: path
+          required: true
+          schema:
+            type: string
+          description: ID del carrito
+        - name: pid
+          in: path
+          required: true
+          schema:
+            type: string
+          description: ID del producto a agregar
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                quantity:
+                  type: integer
+                  format: int64
+              required:
+                - quantity
+      responses:
+        '200':
+          description: Producto agregado al carrito correctamente
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Cart'
+        '404':
+          description: Error en agregar producto al carrito
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  respuesta:
+                    type: string
+                  mensaje:
+                    type: string
+        '400':
+          description: Error en agregar producto al carrito
+          content:
+            application/json
